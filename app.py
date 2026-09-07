@@ -15,7 +15,7 @@ if api_key:
 
     if st.button("Generate"):
         if topic:
-            model = genai.GenerativeModel("gemini-3.6-flash")
+            model = genai.GenerativeModel("gemini-1.5-flash")
             prompt = f"Act as an AI tutor. Topic: {topic}. Task: {mode}."
             
             with st.spinner("Thinking..."):
